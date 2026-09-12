@@ -3,7 +3,7 @@
 ## BRUTE FORCE
 
 - Generate all the subarrays possible and calculate sum and compare it with `MaximumSum` and return `MaximumSum`
-
+```cpp
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
@@ -25,7 +25,7 @@ public:
         return MaximumSum;
     }
 };
-
+```
 Time Complexity- Nearly around O(N^3) <br>
 Space Complexity- O(1)
 
