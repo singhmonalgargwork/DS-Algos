@@ -29,5 +29,18 @@ public:
 Time Complexity- Nearly around O(N^3) <br>
 Space Complexity- O(1)
 
+
 ## BETTER APPROACH
 
+-Use prefix sum technique and add new index's value to sum and then compute max of sum and MaximumSum and return MaximumSum <br>
+
+for(int i=0;i<n;i++){
+    int sum=0;
+    for(int j=i;j<n;j++){
+        sum+=nums[j];
+        maximum=max(sum,maximum);
+        }
+
+}
+
+    return maximum;
