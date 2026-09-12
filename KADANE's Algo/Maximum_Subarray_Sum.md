@@ -44,3 +44,6 @@ for(int i=0;i<n;i++){
 }
 
     return maximum;
+
+Time Complexity- Nearly around O(N^2) <br>
+Space Complexity- O(1)
