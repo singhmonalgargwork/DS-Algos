@@ -33,6 +33,7 @@ Space Complexity- O(1)
 ## BETTER APPROACH
 
 -Use prefix sum technique and add new index's value to sum and then compute max of sum and MaximumSum and return MaximumSum <br>
+
 ```cpp
 for(int i=0;i<n;i++){
     int sum=0;
@@ -44,7 +45,30 @@ for(int i=0;i<n;i++){
 }
 
     return maximum;
-    ```
+```
 
 Time Complexity- Nearly around O(N^2) <br>
+Space Complexity- O(1)
+
+## OPTIMAL APPROACH
+
+### Kadane's algo 
+
+- whenever sum < 0 , we leave that element and start a new subarray from that element 
+
+```cpp
+int maximum=INT_MIN;
+int sum=0;
+for(int i=0;i<n;i++){
+    sum+=nums[i];
+    
+    if(sum>maximum) maximum=sum;
+    
+    if(sum<0) sum=0; if sum<0 , reinitialize sum to 0 and leave that element;
+ }
+
+    return maximum;
+```
+
+Time Complexity- O(N)
 Space Complexity- O(1)
