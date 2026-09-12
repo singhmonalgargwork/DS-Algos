@@ -2,7 +2,7 @@
 
 ## BRUTE FORCE
 
-- Generate all the subarrays possible and calculate sum and compare it with MaximumSum and return MaximumSum
+- Generate all the subarrays possible and calculate sum and compare it with `MaximumSum` and return `MaximumSum`
 
 class Solution {
 public:
