@@ -33,7 +33,7 @@ Space Complexity- O(1)
 ## BETTER APPROACH
 
 -Use prefix sum technique and add new index's value to sum and then compute max of sum and MaximumSum and return MaximumSum <br>
-
+```cpp
 for(int i=0;i<n;i++){
     int sum=0;
     for(int j=i;j<n;j++){
@@ -44,6 +44,7 @@ for(int i=0;i<n;i++){
 }
 
     return maximum;
+    ```
 
 Time Complexity- Nearly around O(N^2) <br>
 Space Complexity- O(1)
