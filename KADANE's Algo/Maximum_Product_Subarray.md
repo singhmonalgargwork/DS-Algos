@@ -41,11 +41,11 @@ Space Complexity- O(1)
 
 ## How has KADANE's algo been used here ?
 
--Kadane's algorithm is used here in the same fundamental way: we are finding the best subarray ending at the current index and deciding whether to:  
+- Kadane's algorithm is used here in the same fundamental way: we are finding the best subarray ending at the current index and deciding whether to:  
 Start a new subarray at the current element, or  
 Extend the previous subarray.  
 
--```The difference is that for products, we need to track both maximum and minimum.```
+- ```The difference is that for products, we need to track both maximum and minimum.```
 
 - The three choices are:  
 
