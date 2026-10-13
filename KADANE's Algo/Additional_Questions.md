@@ -54,4 +54,29 @@ public:
 Time Complexity- O(N) <br>
 Space Complexity- O(1) 
 
+
+
 ## Leetcode 1749. Maximum Absolute Sum of Any Subarray
+- Simple question , just ```calculate both maxSum and minSum``` using standard Kadane's algo 
+
+```cpp 
+class Solution {
+public:
+    int maxAbsoluteSum(vector<int>& nums) {
+        int currMaxSum=0;
+        int currMinSum=0;
+        int maxSum=INT_MIN;
+        int minSum=INT_MAX;
+
+        for(int x : nums){
+            currMaxSum=max(currMaxSum+x , x);
+            maxSum=max(maxSum,currMaxSum);
+
+            currMinSum=min(currMinSum+x , x);
+            minSum=min(minSum,currMinSum);
+        }
+
+        return max(maxSum,-minSum);
+    }
+};
+```
