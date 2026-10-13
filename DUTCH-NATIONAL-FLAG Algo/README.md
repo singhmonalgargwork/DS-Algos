@@ -22,6 +22,7 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
 
     - high: boundary of the region containing 2s.
 
+
 - Initialize these 3 pointers as
   ```text
   int low = 0;
@@ -29,7 +30,14 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
   int high = n - 1;
   ```
 
-## Code Template
+- [0.....low-1] -> 0 (extreme left)
+- [low....mid-1] -> 1
+- [high+1...N-1] -> 2 (extreme right)
+- [mid.....high] -> unsorted part consisting of 0,1,2 -> which we need to sort using dutch national flag 
+
+![Dutch National Flag case-1 ss](images/case-1.png)
+
+## Code Template 
 ```cpp
 while (mid <= high) {
     if (nums[mid] == 0) { // current element belongs to leftmost region
