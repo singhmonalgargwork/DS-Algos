@@ -16,7 +16,7 @@
 - In such scenarios/case - 
   - ``` return max(maxSum , TotalSum - minSum)``` , where maxSum is the sum according to normal maximize Kdane's algo , minSum is the sum according to normal minimize Kdane's algo
 
-- # ** Edge case ** - All elements are negative
+- #### ** Edge case ** - All elements are negative
 ``` straightaway return the maxSum obtained using kadane's algo``` 
 
 ## CODE
