@@ -46,3 +46,7 @@ while (mid <= high) {
     }
 }
 ```
+
+## Complexity Analysis
+Time Complexity: O(n)  
+Space Complexity: O(1)
