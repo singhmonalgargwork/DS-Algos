@@ -34,8 +34,19 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
 - [low....mid-1] -> 1
 - [high+1...N-1] -> 2 (extreme right)
 - [mid.....high] -> unsorted part consisting of 0,1,2 -> which we need to sort using dutch national flag 
+<br> <br> <br>
+
 
 ![Dutch National Flag case-1 ss](images/case-1.png)
+- In above case , swap 0(mid) with 1(low) - hence swap nums[low] and nums[mid]
+<br> <br>
+
+![Dutch National Flag case-2 ss](images/case-2.png) 
+- In above case , as the array is already sorted till mid , we move mid by 1 place (mid++);
+<br> <br>
+
+![Dutch National Flag case-3 ss](images/case-3.png)
+- In above case , there maybe any element at high index , hence swap mid with high and do high-- , then leftmost part is sorted , now after swapping , nums[mid] maybe 0 , 1 or 2 , then we again apply these rules to sort the entire array.
 
 ## Code Template 
 ```cpp
