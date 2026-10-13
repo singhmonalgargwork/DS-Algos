@@ -5,4 +5,5 @@
 
 ### Case 1: Non-wrapping subarray 
 - The subarray lies entirely within the normal array boundaries. <br>
-- We can solve this using ordinary Kadane's algorithm.
+- We can solve this using ```ordinary Kadane's algorithm.```
+
