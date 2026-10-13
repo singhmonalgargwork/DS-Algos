@@ -53,3 +53,5 @@ public:
 ```
 Time Complexity- O(N) <br>
 Space Complexity- O(1) 
+
+## Leetcode 1749. Maximum Absolute Sum of Any Subarray
