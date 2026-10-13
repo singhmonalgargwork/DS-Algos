@@ -14,10 +14,10 @@
   - The elements between the selected suffix and prefix are excluded.
 
 - In such scenarios/case - 
-  - ```text return max(maxSum , TotalSum - minSum)``` , where maxSum is the sum according to normal maximize Kdane's algo , minSum is the sum according to normal minimize Kdane's algo
+  - ``` return max(maxSum , TotalSum - minSum)``` , where maxSum is the sum according to normal maximize Kdane's algo , minSum is the sum according to normal minimize Kdane's algo
 
 - # ** Edge case ** - All elements are negative
-```text straightaway return the maxSum obtained using kadane's algo``` 
+``` straightaway return the maxSum obtained using kadane's algo``` 
 
 ## CODE
 
