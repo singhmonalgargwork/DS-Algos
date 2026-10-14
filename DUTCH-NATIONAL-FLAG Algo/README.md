@@ -1,9 +1,17 @@
 # Dutch National Flag Algorithm 
 
+## Table of Contents
+
+- [What is Dutch National Flag algo](#what-is-the-dutch-national-flag-algorithm)
+- [Important cases*](#cases-that-may-arise-while-solving)
+- [Code template](#code-template)
+- [Complexity Analysis](#complexity-analysis)
+- [DNF recognition checklist](#the-dnf-recognition-checklist)
+
 ##  What is the Dutch National Flag Algorithm?
 - The Dutch National Flag (DNF) algorithm is an in-place array partitioning technique used to divide an array into three groups in a single traversal.
 
-- DNF exploits the fact that there are exactly three categories of values.
+- DNF exploits the fact that there are ```exactly three categories of values```.
 
 - It is commonly used when an array contains three distinct categories of elements, such as 0, 1, and 2.
 
@@ -38,10 +46,12 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
 - Since , the portion from ```mid to high(both inclusive) is unsorted``` and ```array initially is unsorted``` , we take mid=0 and high=N-1 as this ```complete section(array) is unsorted at start```;
 <br> <br> <br>
 
+
 > [!NOTE]
 > The standard Dutch National Flag (DNF) algorithm ```does not preserve relative ordering```.
 <br> <br> 
 
+### Cases that may arise while solving 
 
 ![Dutch National Flag case-1 ss](images/case-1.png)
 - In above case , swap 0(mid) with 1(low) - hence swap nums[low] and nums[mid]
@@ -53,6 +63,7 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
 
 ![Dutch National Flag case-3 ss](images/case-3.png)
 - In above case , there maybe any element at high index , hence swap mid with high and do high-- , then leftmost part is sorted , now after swapping , nums[mid] maybe 0 , 1 or 2 , then we again apply these rules to sort the entire array.
+
 
 ## Code Template 
 ```cpp
@@ -75,3 +86,7 @@ while (mid <= high) {
 ## Complexity Analysis
 Time Complexity: O(n)  
 Space Complexity: O(1)
+
+## The DNF recognition checklist
+>[!TIP]
+> Clue 1: Exactly three categories
