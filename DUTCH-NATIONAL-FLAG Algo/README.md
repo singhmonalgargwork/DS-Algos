@@ -88,4 +88,4 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 
 ## The DNF recognition checklist
-![DNF Recognition](images\Recognition.png)
+![DNF Recognition](images/Recognition.png)
