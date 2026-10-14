@@ -39,8 +39,10 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
 <br> <br> <br>
 
 > [!NOTE]
-The standard Dutch National Flag (DNF) algorithm ```does not preserve relative ordering```.
+> The standard Dutch National Flag (DNF) algorithm ```does not preserve relative ordering```.
 <br> <br> 
+
+
 ![Dutch National Flag case-1 ss](images/case-1.png)
 - In above case , swap 0(mid) with 1(low) - hence swap nums[low] and nums[mid]
 <br> <br>
