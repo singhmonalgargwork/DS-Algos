@@ -34,6 +34,7 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
 - [low....mid-1] -> 1
 - [high+1...N-1] -> 2 (extreme right)
 - [mid.....high] -> unsorted part consisting of 0,1,2 -> which we need to sort using dutch national flag 
+- Since , the portion from mid to high(both inclusive) is unsorted and array initially is unsorted , we take mid=0 and high=N-1 as this complete section is unsorted at start;
 <br> <br> <br>
 
 
