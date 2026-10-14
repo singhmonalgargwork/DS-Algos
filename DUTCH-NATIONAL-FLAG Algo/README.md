@@ -88,7 +88,4 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 
 ## The DNF recognition checklist
->[!TIP]
-> Clue 1: Exactly three categories  
-> The problem has three groups, such as values less than, equal to, and greater than a pivot.  
-> Example: LeetCode 75 — Sort Colors (0, 1, 2).
+![DNF Recognition](images\Recognition.png)
