@@ -38,6 +38,8 @@ The objective is to group all 0s first, followed by all 1s, and finally all 2s.
 - Since , the portion from ```mid to high(both inclusive) is unsorted``` and ```array initially is unsorted``` , we take mid=0 and high=N-1 as this ```complete section(array) is unsorted at start```;
 <br> <br> <br>
 
+> [!NOTE]
+The standard Dutch National Flag (DNF) algorithm ```does not preserve relative ordering```.
 
 ![Dutch National Flag case-1 ss](images/case-1.png)
 - In above case , swap 0(mid) with 1(low) - hence swap nums[low] and nums[mid]
