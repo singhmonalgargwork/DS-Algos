@@ -22,3 +22,12 @@
   - The majority element appears more than all the other elements combined.
 
   - Therefore, even after cancelling different elements against it, at least one occurrence of the majority element must survive.
+
+- As the theory won't be sufficient to understand , let's do it with an example
+<br> <br>
+![Initial iteration](images/start.png)
+- Initialize count as 0 , at every index i(used for looping through array) , if count is found to be 0 , we assume that element to be the majority element 
+- Now in starting , as count=0 , our majority element(el) is arr[0] i.e. 7
+- Now loop through the array , ```if el is found -> count++ , if not found -> count--;```
+<br> <br> <br>
+![Second time count was found to be 0](images/now1.png)
