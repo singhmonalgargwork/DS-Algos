@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Ovrview](#overview)
+- [Overview](#overview)
 - [Core Intuition](#core-intuition)
 - 
 
