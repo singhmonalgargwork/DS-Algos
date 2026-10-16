@@ -4,7 +4,7 @@
 
 - [Overview](#overview)
 - [Core Intuition](#core-intuition)
-- 
+- [Complexity Analysis](#complexity-analysis)
 
 ## Overview
 - Moore's Voting Algorithm is an efficient algorithm used to find the majority element in an array.
@@ -36,3 +36,13 @@
 ![Edging towards our answer](images/now2.png)
 - At the end , since 5 has some positive count -> it may be our majority element (el=5)
 - After all this , run a loop and count occurence of el , if count of el > N/2 -> majority element found;
+
+## Complexity Analysis
+
+- If the problem ```explicitly states that array has a majority element``` , then we don't check the last loop as it is confirmed that our el found at last is the majority element <br>
+Hence -  ```Time Complexity-> O(N) ,  Space Complexity-> O(1)``` 
+
+<br> 
+
+- If the problem does not guarantee us of majority element , we have to run the last loop as well to check the majority element(el) found at last is our actual majority element or not <br> 
+Hence - ``` Time Complexity-> O(N)+O(N)=O(2N) , Space Complexity-> O(1)```
