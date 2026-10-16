@@ -32,7 +32,7 @@
 <br> <br> <br>
 ![Second time count was found to be 0](images/now1.png)
 - Now, as count becomes 0 , our majority element is 5 and do count++;
-
+<br> <br>
 ![Edging towards our answer](images/now2.png)
 - At the end , since 5 has some positive count -> it may be our majority element (el=5)
 - After all this , run a loop and count occurence of el , if count of el > N/2 -> majority element found;
