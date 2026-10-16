@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Core Intuition](#core-intuition)
 - [Complexity Analysis](#complexity-analysis)
+- [Problems](#problems)
 
 ## Overview
 - Moore's Voting Algorithm is an efficient algorithm used to find the majority element in an array.
@@ -46,3 +47,7 @@ Hence -  ```Time Complexity-> O(N) ,  Space Complexity-> O(1)```
 
 - If the problem does not guarantee us of majority element , we have to run the last loop as well to check the majority element(el) found at last is our actual majority element or not <br> 
 Hence - ``` Time Complexity-> O(N)+O(N)=O(2N) , Space Complexity-> O(1)```
+
+## Problems
+- Leetcode 169. Majority Element
+- Leetcode 229. Majority Element II
