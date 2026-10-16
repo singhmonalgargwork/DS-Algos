@@ -27,7 +27,12 @@
 <br> <br>
 ![Initial iteration](images/start.png)
 - Initialize count as 0 , at every index i(used for looping through array) , if count is found to be 0 , we assume that element to be the majority element 
-- Now in starting , as count=0 , our majority element(el) is arr[0] i.e. 7
+- Now in starting , as count=0 , our majority element(el) is arr[0] i.e. 7 -> do count++;
 - Now loop through the array , ```if el is found -> count++ , if not found -> count--;```
 <br> <br> <br>
 ![Second time count was found to be 0](images/now1.png)
+- Now, as count becomes 0 , our majority element is 5 and do count++;
+
+![Edging towards our answer](images/now2.png)
+- At the end , since 5 has some positive count -> it may be our majority element (el=5)
+- After all this , run a loop and count occurence of el , if count of el > N/2 -> majority element found;
