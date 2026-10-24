@@ -62,3 +62,14 @@ last[c] = rightmost index of character c in the pattern.
 last[c] = -1 if c does not occur in the pattern.
 
 The shift is:  ```shift = max(1, j - last[c])```
+
+### Example-  
+Text    = ABAAABCD  
+Pattern = ABC
+
+  - The last pattern character C does not match the text character A.
+
+  - Since A occurs at index 0 in the pattern, shift the pattern by:  
+  (here , j=2 , last[c]=0), c is A in this case 
+
+  shift = max(1, 2 - 0) = 2  
