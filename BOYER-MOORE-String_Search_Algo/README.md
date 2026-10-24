@@ -51,7 +51,7 @@ The bad-character rule uses the character in the text that caused a mismatch.
 
    - 4. If the character does not occur in the pattern, shift the pattern past the mismatching character.
 
-### Shift Formula
+## 4. Shift Formula
 
 Let:
 
@@ -73,3 +73,7 @@ Pattern = ABC
   (here , j=2 , last[c]=0), c is A in this case 
 
   shift = max(1, 2 - 0) = 2  
+
+
+## 5. C++ Code Implementation
+```cpp
