@@ -55,11 +55,11 @@ The bad-character rule uses the character in the text that caused a mismatch.
 
 Let:
 
-**j = index of the mismatching character in the pattern.**
+- **j = index of the mismatching character in the pattern.**  
+- 'c' is the ```mismatching text character``` 
+- last[c] = rightmost index of character c in the pattern.
 
-last[c] = rightmost index of character c in the pattern.
-
-last[c] = -1 if c does not occur in the pattern.
+- last[c] = -1 if c does not occur in the pattern.
 
 The shift is:  ```shift = max(1, j - last[c])```
 
