@@ -129,3 +129,7 @@ int m=pattern.size();
 - Best-case search -> O(n/m) , (Large shifts skip many alignments)
 - Worst-case search -> O(nm) , (Multiple comparisons may occur at many alignments)
 - Space Complexity - O(256) which can be assumed as O(1) since 256 is a fixed size
+
+## Problems
+- [Leetcode-28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=boyer-moore-string-search-algorithm)
+- [Leetcode-686. Repeated String Match](https://leetcode.com/problems/repeated-string-match/description/?envType=problem-list-v2&envId=boyer-moore-string-search-algorithm)
