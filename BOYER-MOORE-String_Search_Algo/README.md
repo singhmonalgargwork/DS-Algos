@@ -55,7 +55,7 @@ The bad-character rule uses the character in the text that caused a mismatch.
 
 Let:
 
-j = index of the mismatching character in the text.
+**j = index of the mismatching character in the pattern.**
 
 last[c] = rightmost index of character c in the pattern.
 
@@ -77,3 +77,45 @@ Pattern = ABC
 
 ## 5. C++ Code Implementation
 ```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int BoyerMoore(string text , string pattern){
+    int n=text.size();
+    int m=pattern.size();
+
+    if(m==0) return 0;
+    if(m>n) return -1;
+
+    vector<int> lastseen(256,-1); // store the last occurences of each character in pattern
+
+    for(int i=0;i<m;i++){
+        lastseen[pattern[i]]=i;
+    }
+
+    int s=0; // starting position(traversed over text to match pattern)
+
+    while(s<=n-m){
+        int j=m-1; // start from right of the pattern to match in text
+
+        while(j>=0 && pattern[j]==text[s+j]){
+            j--;
+        }
+
+        if(j<0) return s; // if j becomes negative that means we have traversed through complete pattern and every character in text matches , hence return that index(s);
+
+        int shift=max(1,j-lastseen[text[s+j]]);
+        s+=shift;
+    }
+
+    return -1;
+}
+
+int main(){
+    string text="ABAAABCD";
+    string pattern="ABC";
+
+    cout<<BoyerMoore(text,pattern)<<'\n'; // function returns first index where pattern matches in text
+
+    return 0;
+}
