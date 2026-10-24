@@ -119,3 +119,13 @@ int main(){
 
     return 0;
 }
+```
+
+## 6. Complexities
+int n=text.size();  
+int m=pattern.size();  
+
+- Traverse the pattern and store the last seen indexes- O(m+256)-> O(m)
+- Best-case search -> O(n/m) , (Large shifts skip many alignments)
+- Worst-case search -> O(nm) , (Multiple comparisons may occur at many alignments)
+- Space Complexity - O(256) which can be assumed as O(1) since 256 is a fixed size
